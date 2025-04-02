@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mega Mercado</title>
     <style>
         * {
             background-color: antiquewhite;
@@ -14,8 +14,8 @@
 
         .container {
             border: 1px solid #706868;
-            width: 10rem;
-            height: 10rem;
+            width: 12rem;
+            height: 13rem;
             margin: 1rem auto;
             /*cima e baixo, centralizou*/
             border-radius: 5%;
@@ -25,6 +25,7 @@
         }
 
         .titulo {
+            background-color: floralwhite;
             font-size: 1.3rem;
             font-weight: bold;
         }
@@ -32,11 +33,20 @@
         .descricao {
             background-color: floralwhite;
             font-size: .8rem;
+            text-align: center;
         }
-        .prec0 {
+
+        .preco {
             background-color: floralwhite;
             font-size: 1.5rem;
             font-weight: bold;
+            text-align: center;
+        }
+
+        img {
+            height: 8rem;
+            width: 12rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -47,6 +57,7 @@
             var nome = prompt("Informe o produto:");
             var descricao = prompt("Descreva o produto:");
             var preco = prompt("Qual preço do produto:");
+            document.write("<img src='image.png' alt='Logo supermercado'")
             document.write(`<h1 class="titulo"> ${nome}!</h1>`);
             document.write(`<article class="descricao"> ${descricao}!</article>`);
             document.write(`<aside class="preco"> ${preco}!</aside>`);
